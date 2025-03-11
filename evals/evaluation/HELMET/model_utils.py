@@ -160,8 +160,8 @@ class OpenAIModel(LLM):
         context_tokens = self.tokenizer.encode(test_item["context"])
         print("** Context tokens after prep:", len(context_tokens))
 
-        demo_tokens = self.tokenizer.encode(test_item["demos"])
-        print("** Demo tokens after prep:", len(demo_tokens))
+        # demo_tokens = self.tokenizer.encode(test_item["demos"])
+        # print("** Demo tokens after prep:", len(demo_tokens))
 
         return prompt
 
